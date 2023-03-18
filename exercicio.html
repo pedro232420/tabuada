@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lc </title>
+    <p id="vendaprod"></p>
+
+</head>
+<body>
+<h1>seus produtos</h1>    
+<div id="vendaprod"></div>
+<script>
+let resposta= prompt ("vc deseja vender algo? /n 1-sim /n 2-não");
+let numeroprod;
+let valor;
+let produto;
+while(resposta == "1"){
+numeroprod = prompt("digite o codigo do produto");
+valor = prompt("digite o valor do produto");
+produto = prompt("digite o nome do produto");
+document.getElementById("vendaprod").innerHTML = "numero: " + numeroprod + "</br>" + "produto:" + produto + "</br>" + "valor:" + valor + "</br>";
+resposta = prompt("vx deseja vender mais algum produto? /n 1-sim /n 2-não");
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
